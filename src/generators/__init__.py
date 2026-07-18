@@ -10,4 +10,5 @@ __all__ = [
     "generate_users",
     "generate_restaurants",
     "generate_sessions",
+    "generate_orders",
 ]
