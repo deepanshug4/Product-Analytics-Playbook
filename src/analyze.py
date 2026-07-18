@@ -5,6 +5,7 @@ Basic analytics for the QuickBite datasets.
 import duckdb
 import pandas as pd
 from pathlib import Path
+from visualization import plot_funnel
 
 DATA_DIR = Path("data/synthetic")
 SQL_DIR = Path("sql")
@@ -64,6 +65,10 @@ def main():
     load_data(con)
 
     run_funnel_analysis(con)
+
+    funnel = run_funnel_analysis(con)
+
+    plot_funnel(funnel)
 
 
 if __name__ == "__main__":
