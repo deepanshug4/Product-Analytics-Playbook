@@ -21,15 +21,40 @@ def load_data(con):
 
 
 def run_funnel_analysis(con):
+    """Run funnel analysis and calculate stage conversion rates."""
 
     query = open(SQL_DIR / "01_funnel_analysis.sql").read()
+    result = con.execute(query).df()
 
-    df = con.execute(query).df()
+    total = result.loc[0, "total_sessions"]
 
-    print("\n===== FUNNEL METRICS =====\n")
-    print(df)
+    funnel = pd.DataFrame({
+        "Stage": [
+            "Restaurant View",
+            "Menu View",
+            "Cart",
+            "Checkout",
+            "Payment",
+            "Completed"
+        ],
+        "Users": [
+            result.loc[0, "restaurant_views"],
+            result.loc[0, "menu_views"],
+            result.loc[0, "cart_additions"],
+            result.loc[0, "checkouts"],
+            result.loc[0, "payments"],
+            result.loc[0, "completed_orders"],
+        ]
+    })
 
-    return df
+    funnel["Conversion %"] = (
+        funnel["Users"] / total * 100
+    ).round(1)
+
+    print("\n===== FUNNEL ANALYSIS =====\n")
+    print(funnel)
+
+    return funnel
 
 
 def main():
