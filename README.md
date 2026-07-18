@@ -1,143 +1,63 @@
-# 📊 Product Analytics Playbook
+# 🍔 Product Analytics Playbook
 
-> End-to-end Product Analytics case studies inspired by real-world marketplace companies such as Uber Eats, Agoda, DoorDash and Booking.com.
-
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![SQL](https://img.shields.io/badge/SQL-DuckDB-green)
-![License](https://img.shields.io/badge/License-MIT-orange)
+A fictional food delivery platform built to demonstrate how Product Analysts use SQL and Python to solve real business problems.
 
 ---
 
-## Overview
+## Project Goals
 
-This repository demonstrates how product analysts solve business problems using **SQL**, **Python**, **statistics**, and **data visualization**.
-
-Rather than focusing on machine learning models, the emphasis is on answering business questions through structured analytics.
-
-Every case study follows the same framework:
-
-```
-Business Problem
-      ↓
-Data Collection
-      ↓
-SQL Exploration
-      ↓
-Python Analysis
-      ↓
-Visualization
-      ↓
-Business Insights
-      ↓
-Recommendations
-      ↓
-Next Experiment
-```
+- Generate realistic synthetic marketplace data
+- Analyze customer behaviour using SQL
+- Visualize business metrics using Python
+- Recommend product improvements
 
 ---
 
-# Case Studies
+## Tech Stack
 
-## 🍔 Food Delivery Funnel Optimization
-
-Investigate declining order conversion across the ordering funnel.
-
-Skills
-
-- Funnel Analysis
+- Python
 - SQL
-- Product Metrics
-- Python
-- Visualization
-- Statistical Testing
-
----
-
-## 🏨 Marketplace Health Dashboard
-
-Analyze marketplace KPIs including:
-
-- Revenue
-- Occupancy
-- Partner Quality
-- Pricing
-- Cancellations
-
----
-
-## 🎁 Promotion Effectiveness
-
-Measure promotional ROI using
-
-- Customer Segmentation
-- Coupon Lift
-- Revenue Impact
-- Incrementality
-
----
-
-## 📈 Customer Retention
-
-Study
-
-- Weekly Cohorts
-- Churn
-- LTV
-- Reactivation
-
----
-
-## 🧪 Experiment Analysis
-
-Evaluate A/B tests using
-
-- Sample Size
-- MDE
-- SRM Detection
-- Statistical Significance
-
----
-
-# Tech Stack
-
-- Python
-- SQL (DuckDB)
+- DuckDB
 - Pandas
-- Plotly
 - Matplotlib
-- SciPy
-- Faker
-- PyTest
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```
-product-analytics-playbook
-│
-├── data/
-├── sql/
-├── src/
-├── notebooks/
-├── outputs/
-└── tests/
+```text
+src/
+sql/
+outputs/
+case_studies/
 ```
 
 ---
 
-# Goals
+## Business Questions
 
-- Demonstrate strong product analytics skills
-- Practice SQL and Python
-- Build reusable analytics workflows
-- Showcase business thinking
+| Analysis | Business Question |
+|-----------|------------------|
+| Funnel | Where do users drop off? |
+| Delivery Fee | Does delivery fee reduce conversion? |
+| City | Which cities perform best? |
+| Restaurant Quality | Do highly-rated restaurants convert better? |
+| Coupons | Are coupons effective? |
 
 ---
 
-# Future Work
+## Example Output
 
-- Interactive dashboard
-- Automated reporting
-- Experimentation framework integration
-- Portfolio website
+(Add screenshots here)
+
+---
+
+## How to Run
+
+```bash
+pip install -r requirements.txt
+
+python src/generate_data.py
+
+python src/run_funnel_analysis.py
+```
