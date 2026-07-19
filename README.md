@@ -48,7 +48,12 @@ case_studies/
 
 ## Example Output
 
-(Add screenshots here)
+<img width="2400" height="1500" alt="funnel_analysis" src="https://github.com/user-attachments/assets/c8614d6d-93df-4b9d-a486-30b342dc7846" />
+<img width="1800" height="1200" alt="coupon_analysis" src="https://github.com/user-attachments/assets/5bb74591-7dc9-4fd1-aac6-7845cc6861a1" />
+<img width="3000" height="1500" alt="city_performance" src="https://github.com/user-attachments/assets/2bf8554d-035e-4325-b0a4-d5ec938d44a7" />
+<img width="2100" height="1200" alt="delivery_fee" src="https://github.com/user-attachments/assets/2efe6b3e-0f3f-47ac-b37f-13663861c1d7" />
+<img width="2100" height="1200" alt="restaurant_quality" src="https://github.com/user-attachments/assets/999e78aa-2bbd-4eaa-85a5-39ab11c2e9bc" />
+
 
 ---
 
