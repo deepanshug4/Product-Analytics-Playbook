@@ -11,7 +11,7 @@ import random
 import numpy as np
 import pandas as pd
 
-from src.config import (
+from config import (
     CITIES,
     N_RESTAURANTS,
     RANDOM_SEED,

@@ -11,7 +11,7 @@ import random
 import numpy as np
 import pandas as pd
 
-from src.config import RANDOM_SEED
+from config import RANDOM_SEED
 
 random.seed(RANDOM_SEED)
 np.random.seed(RANDOM_SEED)
