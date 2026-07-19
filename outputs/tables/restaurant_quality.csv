@@ -1,0 +1,5 @@
+rating_bucket,sessions,completed_orders,conversion_rate
+Below 3.5,1324,26.0,1.96
+3.5 - 4.0,20763,411.0,1.98
+4.0 - 4.5,52075,1437.0,2.76
+4.5+,25838,1132.0,4.38
